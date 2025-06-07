@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <button class="buttonRetour">
+            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3" ><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></a>
+        </button>
+    </header>
+    <main>
+        <section class="sectionSAE">
+            <h2 class="titre1SAE">Mes créations de modélisation 3D</h2>
+            <p>J'utilise le logiciel Blender pour l'entiereté de mes rendus</p>
+
+            <h2 class="titre2SAE">Objets randoms</h2>
+            <p>Pour la plupart des objets, je ne me suis pas aidé d'images de réferences</p>
+            <p>Le but étant d'arriver à modéliser les objets de la manière que j'imagine</p>
+
+                <section class="slider-container">
+                    <ul class="listeImg">
+                        <li><img class="ImgListed" src="untitled.png" alt=""></li>
+                        <!--<li><img class="ImgListed" src="wine.png" alt=""></li>-->
+                        <li><img class="ImgListed" src="Render Result crisps 3.png" alt=""></li>
+                        <li><img class="ImgListed" src="Render Result microwave oven 2.png" alt=""></li>
+                        <li><img class="ImgListed" src="Render Result cat plush.png" alt=""></li>
+                        <li><img class="ImgListed" src="Render Result snow globe.png" alt=""></li>
+                        <li><img class="ImgListed" src="dice.png" alt=""></li>
+                    </ul>
+                </section>
+        </section>
+
+
+
+        <section class="sectionSAE">
+            <h2 class="titre2SAE">Scenes plus détaillées</h2>
+
+    
+                <img src="Render Result bus 2.png" alt="">
+                <img src="Render Result bat 7 (3).png" alt="">
+                <img src="Render Result street.png" alt="">
+                <img src="Render Result rocket luncher.png" alt="">
+        </section>
+
+        
+        <section class="sectionSAE">
+            <div class="image-container" id="slider">
+                <img src="RenderResultfuturisticbuilding7.png" alt="Image de fond" class="base-img" />
+                <div class="overlay-wrapper">
+                <img src="RenderResultfuturisticbuilding6.png" alt="Image par-dessus" class="overlay-img" id="overlayImg" />
+                </div>
+                <div class="slider-bar" id="sliderBar"></div>
+            </div>
+            
+            <script>
+                const container = document.getElementById("slider");
+                const overlayImg = document.getElementById("overlayImg");
+                const sliderBar = document.getElementById("sliderBar");
+            
+                container.addEventListener("mousemove", (e) => {
+                const rect = container.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const percentage = (x / rect.width) * 100;
+                overlayImg.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+                sliderBar.style.left = `${x}px`;
+                });
+            </script>
+        </section>
+
+    </main>
+ 
+
+
+</body>

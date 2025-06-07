@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="lightmode.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href=index.html>Accueil</a></li> 
+                <li><a href=.imgExtn1>Mes Projets</a></li> 
+                <li><a href=#proj>Me Contacter</a></li>
+            </ul> 
+        </nav>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+        </button>
+
+    </header>
+
+    <main>
+        <div id="divNom">  
+            <div class="gradient"></div>
+            <section id="Secnom">
+                    <h2 id="prenom"> Natnael Mehary</h2>
+                    <p id="txtprenom">étudiant en BUT informatique</p>
+            </section>
+        </div>
+            <section class="section" id="about">
+                <h1>A propos de moi</h1>
+                <div calss="line">
+                    <p>Je suis un étudiant passionné par le développement  informatique et l'administration système.</p>
+                </div>
+
+                <h2 class="titreCompetences1">Compétences informatiques</h2>
+                <div class="divCompetences">
+                    <section class="sectionCompetences">
+                        <p class="titreComp">Backend</p>
+                        <ul>
+                            <li class="listeComp">Java</li>
+                            <li class="listeComp">PosrgeSQL</li>
+                            <li class="listeComp">R</li>
+                            <li class="listeComp">Assembleur</li>
+                            <li class="listeComp">Shell Linux</li>    
+                        </section>
+
+                    <section class="sectionCompetences">
+                        <p class="titreComp">Frontend</p>
+                        <ul>
+                            <li class="listeComp">JavaFx</li>
+                            <li class="listeComp">HTML/CSS</li>  
+                        </section>
+                </div>
+            </section>
+
+            <img class="ext" src="notebooks.png" alt="Image illustrant mon parcours">
+
+
+            <section class="section" id="parcours">
+                <h1>Parcours scolaire</h1>
+
+                <ul>
+                    <li>2017-2021 : <a href="https://www.institution-saint-francois.fr/">Collège Saint Francois</a></li>
+                    <li>Stage 1 : Développement d'une application mobile</li>
+                    <li>2021-2024 : <a href="https://www.institution-saint-francois.fr/">Lycée Sainte Cécile</a></li>
+                    <li>Stage 2 : Création d'une interface web dynamique</li>
+                </ul>
+            </section>
+
+            <img class="ext" src="globepurple.png" alt="Image illustrant mon parcours">
+
+            <section class="section" id="proj">
+                <h1>Mes Projets scolaires</h1>
+
+                <div class="line">
+                    <p class="p1">Voici une sélection de mes projets réalisés au cours de ma formation :</p>
+                </div>
+                
+                <div class="divProj"> 
+
+                    <a class="sectionProj" href="SAE1.html">
+                        <img class="imgProj" src="some-catppuccin-based-wallpapers-i-made-for-kde-v0-rbkvky0s0pwd1.png" alt="">
+                        <p class="pProj">Installation d’un poste pour le développement</p>
+                    </a> 
+
+                </div>
+
+                <div class="line">
+                    <p class="p1">Mes projets personnels :</p>
+                </div>
+
+                <div class="divProj">
+
+                    <a class="sectionProj" href="projBlender.html">
+                        <img class="imgProj" src="blenderlogo.png" alt="">
+                        <p class="pProj">Mes créations de modélisation 3d</p>
+                    </a>
+
+                 </div>
+            </section>
+
+            <section class="section" id="contact">
+                <h1>Me Contacter</h1>
+
+                <p>N'hésitez pas à me contacter pour toute question :</p>
+
+                <form action="traitement_formulaire.php" method="post">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button id="buttoncontacter" type="submit">Envoyer</button>
+                </form>
+
+                <!---------- /!\ Pas dans un portflio /!\ ---------->
+                
+                <!--
+                <p>Ou contactez-moi directement par email : </p>
+
+                <ul id="vertLi">
+                    <li><a href="mailto:natnael.mhry@gmail.com">natnael.mhry@gmail.com</a></li>
+                    <li><a href="mailto:meharyn@etu.univ-grenoble-alpes.fr">meharyn@etu.univ-grenoble-alpes.fr</a></li>
+                </ul>-->
+                
+                <p>Retrouvez-moi sur les réseaux sociaux :</p>
+
+                <ul id="soc">
+                    <li><a href="https://www.linkedin.com/in/votreprofil">LinkedIn</a></li>
+                    <li><a href="https://github.com/votreprofil">GitHub</a></li>
+                </ul>
+            </section>
+
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <p>&copy; 2025 MEHARY. Portfolio personnel </p>
+            <!--<ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>-->
+            <div class="social-links">
+                <a href="https://github.com/tonprofil" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+</footer>
+
+</body>
+
+
+</html>
